@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jm.albertospizza.FragmentProduct">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame_product_image">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/no_image_product"
+                android:layout_below="@+id/some_id_if_needed"
+                android:layout_alignParentStart="true"
+                android:id="@+id/img_product"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimary" />
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:srcCompat="@mipmap/ic_add_white_24dp"
+            android:layout_marginEnd="23dp"
+            android:id="@+id/fab_product_add"
+            android:layout_above="@+id/frame_product_details"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="-25dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_product_image"
+            android:id="@+id/frame_product_details">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_product_details">
+
+                <TextView
+                    android:text="..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_product_name"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:textAllCaps="true"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:elevation="1dp"
+                    android:paddingBottom="20dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txt_product_name"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/linear_product_type"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/arrow_left"
+                        android:id="@+id/btn_product_prevType"
+                        android:layout_weight="0.15"
+                        android:background="@android:color/transparent" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7">
+
+                        <TextView
+                            android:text="..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_product_type"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:text="..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_product_unit"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/arrow_right"
+                        android:id="@+id/btn_product_nextType"
+                        android:layout_weight="0.15"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_product_page_price"
+                    android:layout_below="@+id/linear_product_type"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:text="Loading..."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_product_description"
+                    android:layout_below="@+id/txt_product_page_price"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

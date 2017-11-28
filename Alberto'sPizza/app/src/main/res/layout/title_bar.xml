@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_item_total_quantity"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_shopping_cart_black_24dp"
+            android:id="@+id/btn_order_page"
+            android:background="@android:color/transparent"
+            android:paddingLeft="0dp" />
+
+        <TextView
+            android:text="ALBERTO'S PIZZA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:elevation="0dp"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_account_circle_black_24dp"
+            android:id="@+id/btn_settings"
+            android:layout_weight="0.15"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jm.albertospizza.FragmentMenu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:id="@+id/scrollviewCategory"
+            android:scrollbarSize="1dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:background="@android:color/black"
+                android:paddingBottom="1dp"
+                android:id="@+id/layout_menu_tab">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scrollviewCategory"
+            android:layout_alignParentStart="true"
+            android:id="@+id/frame_menu_container">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

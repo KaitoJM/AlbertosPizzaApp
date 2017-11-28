@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_box_shadow"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_order_row_quantity"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.32">
+
+            <TextView
+                android:text="Italian Pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_order_row_name"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:text="Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_order_row_type"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:text="Unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_order_row_unit"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <TextView
+            android:text="P85.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_order_row_price"
+            android:layout_weight="1"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/layout_order_row_actions">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                app:srcCompat="@drawable/arrow_up"
+                android:id="@+id/btn_order_increment"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="false"
+                android:fitsSystemWindows="false"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                app:srcCompat="@drawable/arrow_down"
+                android:id="@+id/btn_order_decrement"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="false"
+                android:fitsSystemWindows="false"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

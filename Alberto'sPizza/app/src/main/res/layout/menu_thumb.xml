@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_box_shadow"
+        android:id="@+id/layout_thumb_parent"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/no_image_product"
+            android:id="@+id/img_menu_product"
+            android:layout_weight="0.17"
+            android:fitsSystemWindows="false"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:maxHeight="80dp"
+            android:minHeight="80dp" />
+
+        <TextView
+            android:text="Italian Pizza asjhdjhda ddg sl gdsdgjhgdshjgdsjhgd jhgdsgdjhgdjhsgdjkgdsjhgdhdg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/txt_thumb_product_name"
+            android:layout_below="@+id/img_menu_product"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:forceHasOverlappingRendering="false"
+            android:minLines="1"
+            android:minHeight="4dp"
+            android:maxLength="20"
+            android:lines="1"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="P85.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_thumb_product_price"
+            android:layout_below="@+id/txt_thumb_product_name"
+            android:layout_alignStart="@+id/txt_thumb_product_name"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/ic_add_white_24dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/fab_thumb_add_to_order"
+            android:layout_marginBottom="25dp"
+            android:layout_alignBottom="@+id/txt_thumb_product_name"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

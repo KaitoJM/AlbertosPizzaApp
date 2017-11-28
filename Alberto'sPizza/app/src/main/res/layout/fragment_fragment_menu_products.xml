@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jm.albertospizza.FragmentMenuProducts"
+    android:id="@+id/frame_menu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_menu_tab"
+        android:layout_alignParentStart="true"
+        android:id="@+id/grid_menu"
+        android:columnWidth="90dp"
+        android:numColumns="3"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp" />
+</FrameLayout>
